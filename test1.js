@@ -1,6 +1,7 @@
 const ps = require(`prompt-sync`);
 const prompt = ps();
 let userAddress;
+//Need to initialize with defaults params here and on
 let turn;
 let enemy;
 let botTurn;
