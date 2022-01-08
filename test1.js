@@ -6,8 +6,8 @@ let enemy;
 let botTurn;
 let botChoose;
 let origBoard = new Array(0);
-let noughts  = "O";
-let crosses = "X";
+const noughts  = "O";
+const crosses = "X";
 let bestSpot = minimax(origBoard, noughts );
 function minimax(newBoard, player) {
     let availSpots = emptyIndices(newBoard);
