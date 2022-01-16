@@ -60,7 +60,7 @@ function emptyIndices(board) {
     return board.filter(s => s !== "O" && s !== "X");
 }
 function winning(board, player) {
-    if (
+    return (
         (board[0] === player && board[1] === player && board[2] === player) ||
         (board[3] === player && board[4] === player && board[5] === player) ||
         (board[6] === player && board[7] === player && board[8] === player) ||
@@ -69,11 +69,7 @@ function winning(board, player) {
         (board[2] === player && board[5] === player && board[8] === player) ||
         (board[0] === player && board[4] === player && board[8] === player) ||
         (board[2] === player && board[4] === player && board[6] === player)
-    ) {
-        return true;
-    } else {
-        return false;
-    }
+    )
 }
 
 function boardUpdate() {
